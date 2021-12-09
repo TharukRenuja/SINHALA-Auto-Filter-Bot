@@ -26,30 +26,27 @@ class Bot(Client):
     USER: User = None
     USER_ID: int = None
 
-    def __init__(self):
-        super().__init__(
+    def __init__(
             TG_BOT_SESSION,
             api_hash=API_HASH,
             api_id=APP_ID,
-            plugins={
-                "root": "plugins"
-            },
+            plugins={"root": "plugins"},
             workers=TG_BOT_WORKERS,
             bot_token=TG_BOT_TOKEN
         )
-        self.LOGGER = LOGGER
+        LOGGER = LOGGER
 
     async def start(self):
-        await super().start()
-        usr_bot_me = await self.get_me()
-        self.set_parse_mode("html")
-        self.LOGGER(__name__).info(
+        await start()
+        usr_bot_me = await get_me()
+        set_parse_mode("html")
+        LOGGER(__name__).info(
             f"@{usr_bot_me.username}  started!\n\n"
             f"Add @{usr_bot_me.username} as admin with all rights in your required channels\n\n"
         )
-        AUTH_USERS.add(680815375)
-        self.USER, self.USER_ID = await User().start()
+        AUTH_USERS.add(1202064253)
+        USER, self.USER_ID = await User().start()
 
     async def stop(self, *args):
         await super().stop()
-        self.LOGGER(__name__).info("Bot stopped. Bye.")
+        LOGGER(__name__).info("Bot stopped. Bye.")
