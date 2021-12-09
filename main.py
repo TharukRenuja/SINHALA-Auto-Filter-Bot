@@ -5,4 +5,4 @@
 
 from bot import Bot
 
-Bot.run()
+Bot().run()
