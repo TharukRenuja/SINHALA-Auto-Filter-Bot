@@ -27,13 +27,12 @@ class Bot(Client):
     USER_ID: int = None
 
     def __init__(
-                TG_BOT_SESSION,
-                api_hash=API_HASH,
-                api_id=APP_ID,
-                plugins={"root": "plugins"},
-                workers=TG_BOT_WORKERS,
-                bot_token=TG_BOT_TOKEN
-                )
+        TG_BOT_SESSION,
+        api_hash=API_HASH,
+        api_id=APP_ID,
+        plugins={"root": "plugins"},
+        workers=TG_BOT_WORKERS,
+        bot_token=TG_BOT_TOKEN
         LOGGER = LOGGER
 
     async def start(self):
