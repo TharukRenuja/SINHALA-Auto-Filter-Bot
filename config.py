@@ -23,7 +23,7 @@ DATABASE_URI = "mongodb+srv://erichdaniken:erichdaniken@cluster0.7enua.mongodb.n
 DATABASE_NAME = "Cluster0"
 
 # ID of users that can use the bot commands
-AUTH_USERS = set(int(x) for x in "2074093062","965180230","1178871117","1202064253".split())
+AUTH_USERS = "2074093062","965180230","1178871117","1202064253"
 
 # Should bot search for document files in channels
 DOC_SEARCH = "yes".lower()
