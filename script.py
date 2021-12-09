@@ -2,39 +2,49 @@ class script(object):
 
 
     START_MSG = """ <b>Hi {}
-You can call this as an Auto Filter Bot if you like :D
-Bot gives button link to files in connected channels on query !
-No need to add filters for your files or movies from now on!
-For more click <i>help</i></b>"""
+😍 Hi {} ,
+I am a filter bot with advanced features currenty workig for any group. මේක AUTO FILTER හි සිංහල සංස්කරණයයි.
+
+🔅 𝙲𝚛𝚎𝚊𝚝𝚎𝚍 ʙʏ:- @SLBotsOfficial
+🔅 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ:- @Pirateslkmovies"""
 
 
-    HELP_MSG = """<b>How to use the bot??</b>
+    HELP_MSG = """
+u>💡 𝐇𝐞𝐥𝐩</u>
 <i>
-* Add bot to your group with admin rights.
-* Add bot to channels which you want to link with <b>all admin rights</b>!
+📌 Add Me To Any Group And Make Me Admin
+📌 Add Me To Your Desired Channel
+(📌 බොට්ව connect කරන්න හදන Group එකටයි Channel එකටයි add කරල ඔක්කොම Previlages එක්ක Admin දෙන්න. )
 </i>
-<b>Bot Commands - Works in Group only</b>
-(You need to be a Auth User in order to use these commands)
-* <code>/add channelid</code>  -  Links channel to your group.
-or
-* <code>/add @channelusername</code> - Links channel to your group.
-<i>NOTE : You can get your channel ID from @ChannelidHEXbot </i>
-* <code>/del channelid</code>  -  Delinks channel from group
-or
-* <code>/del @channelusername</code>  -  Delinks channel from group
-<i>NOTE : You can get connected channel details by <code>/filterstats</code> </i>
-* <code>/delall</code>  -  Removes all connected channels and filters from group!
-<i>Note : Dont add command delete bots in group! Otherwise, delall command wont work</i>
-* <code>/filterstats</code>  -  Check connected channels and number of filters.
-No need add each filter again!
-Bot will automatically search for your files and give links to that!
-<b>© @SLBotsOfficial</b>"""
-
-
-    ABOUT_MSG = """⭕️<b>My Name : Auto Filter Bot</b>
+<b> 🤗 𝐌𝐲 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 (Works Only In Groups/ Group වල විතරයි command දෙන්න පුලුවන්) :</b>
+    👉 <code>/add chat_id</code>
+                OR                  - To Connect A Group With A Channel (Bot Should Be Admin With Full Previlages In Both Group And Channel.චැනල් එක connect කරන්න ඕනෙනම් /add ගහල space එකක තියල channel id එක ගහන්න)
+     <code>/add @Username</code>
+     
+    👉 <code>/del chat_id</code>
+                OR                  - To disconnect A Group With A Channel (channel එක group එකෙන් අයින් කරන්න ඕනෙනම්)
+     <code>/del @Username</code>
+     
+    👉 <code>/delall</code>  - This Command Will Disconnect All Connected Channel With The Group And Deletes All Its File From DB (connect කරල තියෙන හැම චැනල් එකක්ම DB එකෙන් අයින් කරන්න ඕනෙනම්)
     
-⭕️<b>Creater :</b> @TharukRenuja
-⭕️<b>Language :</b> <code>Python3</code>
-⭕️<b>Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram 1.0.7</a> 
-⭕️<b>Bot Updates :</b> <a href='https://t.me/SLBotsOfficial'>SLBotsOfficial</a> 
+    👉 <code>/filterstats</code> -  This Command Will Display You A Stats MSG Instance (BOT stats බලන්න ඕනෙනම්)
+
+🔅 𝙲𝚛𝚎𝚊𝚝𝚎𝚍 ʙʏ:- @SLBotsOfficial
+🔅 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ:- @Pirateslkmovies
+</b>
+"""
+
+
+    ABOUT_MSG = """
+    📕 𝐀𝐛𝐨𝐮𝐭 𝐌𝐞 ,
+○ ᴍʏ ɴᴀᴍᴇ : {}
+○ ʟᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ 
+○ ғʀᴀᴍᴇᴡᴏʀᴋ : ᴘʏʀᴏɢʀᴀᴍ 
+○ sᴇʀᴠᴇʀ : ʜᴇʀᴏᴋᴜ 
+○ ᴠᴇʀsɪᴏɴ : 1.0.0
+○ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : no code 🤠
+○ 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋 : @𝖳𝗁𝖺𝗋𝗎𝗄𝖱𝖾𝗇𝗎𝗃𝖺
+○ ᴄʀᴇᴀᴛᴏʀ : [Hexer](https://t.me/Pirateslk)
+
+**[Pirateslk](https://t.me/pirateslkmovies)**
 """
